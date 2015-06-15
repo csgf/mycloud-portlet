@@ -1,0 +1,396 @@
+/* 
+    Document   : style
+    Created on : Oct 25, 2012, 1:07:09 PM
+    Author     : salvullo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.netInfo-dialog p {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.netInfo-dialog span {
+    margin-left: 30px;
+}
+.netInfo-dialog a {
+    margin-left: 20px;
+}
+.name{
+    padding-left: 5px;
+    cursor:move;
+}
+.container-header {
+    height: 30px;
+}
+.container-header p{
+    display:block;
+    float:left;
+    margin-top: 5px;
+    margin-left:  35px;
+    margin-bottom:10px;
+}
+
+.container-header-services {
+    display: block;
+    float: left;
+    margin-top: 11px;
+    margin-bottom:10px;
+}
+
+.container-header img {
+    width: 15px;
+    height:15px;
+    margin-left: 10px;
+    margin-top: 7px;
+    float: left;
+    cursor:pointer;
+
+}
+.noVNC-dialog iframe {
+    width: 750px;
+    height: 450px;
+}
+
+#mycontainer {
+    height: 600px;
+}
+
+#deploy-helper {
+    background:none;
+    position:absolute;
+    width: 180px;
+    height: 180px;
+    z-index: 2;
+    margin-left: 58%;
+    margin-top: 10%;
+}
+#deploy-helper p {
+    color:green;
+    display: block;
+    margin-left: 5px
+}
+#deploy-helper img {
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.hm-header {
+    padding: 3px;
+}
+.hm-header img {
+    float:left;
+}
+.refresh-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
+    margin-top: 8px;
+    margin-right: 2px;
+    display: block;
+    cursor: pointer;
+}
+.hm-header p {
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+}
+
+.service {
+    width:100%;
+}
+.service img {
+    float:left;
+    width:40px;
+    height:40px;
+    padding-top:2px;
+}
+.service p{
+    margin-top:15px;
+}
+
+.waiting-overlay {
+    background-color: #FFFFFF !important; 
+    z-index: 9 !important;
+    opacity:0.9 !important; 
+    filter:alpha(opacity=90) !important; /* For IE8 and earlier */
+    position:absolute;
+}
+
+
+.draggable { 
+
+    float: left; 
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.drag-handle { cursor: move; }
+
+#cloud-container
+{
+    width:78%;
+    float:left;
+    height: 100%;
+}
+
+#services-container
+{
+    float:left;
+    width:17%;
+
+    height: 100%;
+}
+
+#cloud-status
+{
+    height: 720px;
+    width:100%;
+}
+
+#service-status
+{
+    height:434px;
+    width:155px;
+    border-left-width: 1px;
+    margin-top:31px;
+}
+#services {
+    width:128px;
+    border-left-width: 1px;
+}
+
+.node div.drag-handle img {
+    float: left;
+}
+.node div.drag-handle p {
+    display: inline;
+    float: left;
+}
+.node div.hmstatus {
+    height : 100%;
+    padding: 5px 10px 20px 0px;
+    min-height:50px;
+}
+
+div.hmstatus ul li img.status {
+    display: none;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
+} 
+.status img{
+
+    width:40px;
+    height:40px;
+}
+div.hmstatus ul li {
+    list-style: none;
+} 
+
+span.controls {
+    margin-left: 20px;
+}
+
+span.controls img
+{
+    cursor: pointer;
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+@-moz-document url-prefix() {
+    body {
+    overflow-y: scroll;
+} 
+
+ul.flavors li { cursor: pointer; }
+ul.flavors li.ui-selecting { background: #FECA40; }
+ul.flavors li.ui-selected  { background: #F39814; color: white; }
+}
+
+button.deploy {
+
+    height: 32px;
+    float: right;
+    top: 6px;
+}
+.ui-icon-cloud-upload {
+    background: url(../images/cloud-upload.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 16px 16px !important;
+    background-position: center !important;
+}
+
+.ui-logo {
+    height:32px;
+    width:100%;
+}
+
+.ui-logo-stack {
+    float:left;
+    height:32px;
+    width: 64px;
+}
+
+.ui-logo-stack-openstack {
+    background-image: url(../images/logo/stack/openstack.png);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.ui-logo-stack-opennebula {
+    background-image: url(../images/logo/stack/opennebula.png);
+    background-repeat: no-repeat;
+    background-size: 64px 32px;
+    background-position: center;
+}
+
+.ui-logo-stack-okeanos {
+    background-image: url(../images/logo/stack/okeanos.png);
+    background-repeat: no-repeat;
+    background-size: 64px 32px;
+    background-position: center;
+}
+
+.ui-logo-stack-occi {
+    background-image: url(../images/logo/stack/occi.png);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: left;
+}
+
+.ui-logo-site-footer {
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+}
+.ui-logo-site-footer-arn {
+    background-image: url(../images/logo/site/arn-dz.png) !important;
+}
+.ui-logo-site-footer-ceta-ciemat {
+    background-image: url(../images/logo/site/ceta-ciemat.png) !important;
+}
+
+.ui-logo-site-footer-ihep-ac {
+    background-image: url(../images/logo/site/ihep-ac.png) !important;
+}
+
+.ui-logo-site-footer-infn-ct {
+    background-image: url(../images/logo/site/infn-ct-egi.png) !important;
+}
+
+.ui-logo-site-footer-cesga-egi {
+    background-image: url(../images/logo/site/cesga-egi.png) !important;
+}
+
+.ui-logo-site-footer-infn-ba {
+    background-image: url(../images/logo/site/infn-ba-egi.png) !important;
+}
+.ui-logo-site-footer-itsyn {
+    background-image: url(../images/logo/site/itsynergy.png) !important;
+}
+.ui-logo-site-footer-ciemat {
+    background-image: url(../images/logo/site/ciemat.png) !important;
+}
+
+.ui-logo-site-footer-grnet {
+    background-image: url(../images/logo/site/grnet-egi.png) !important;
+}
+
+.ui-logo-site-footer-cesnet {
+    background-image: url(../images/logo/site/cesnet-egi.png) !important;
+}
+
+.ui-logo-site-footer-unime {
+    background-image: url(../images/logo/site/unime.png) !important;
+}
+.ui-logo-site-footer-enea {
+    background-image: url(../images/logo/site/enea-it-egi.png) !important;
+}
+.ui-logo-site-footer-csir-co {
+    background-image: url(../images/logo/site/sagrid.png) !important;
+}
+
+.ui-logo-service {
+    width:65px;
+    height:32px;
+    float:left;
+}
+.ui-logo-service-generic-VM {
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-image: url(../images/logo/service/vm.png);
+}
+.ui-logo-service-generic-WWW {
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-image: url(../images/logo/service/www.png);
+}
+.ui-logo-service-octave {
+    background-image: url(../images/logo/service/octave.png);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+.ui-logo-service-r {
+    background-image: url(../images/logo/service/r.png);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+
+img.country-icon {  
+    padding-top:20px;
+    padding-right:4px;
+}
+
+#trash-basket {
+    height: 64px;
+    border-top:0px;
+    float: left;
+}
+
+#trash-basket img {
+    height: 64px;
+    width: 64px;
+}
+#multiupload-basket {
+
+    height: 64px;
+    border-top:0px;
+}
+#multiupload-basket img {
+    height: 64px;
+    width: 64px;
+}
+#dragging-group {
+
+    position:fixed;
+    z-index: 9999;
+
+}
+
+
+#selectActions span, #selectActions li {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    float: left;
+    float: left; 
+    padding: 5px;
+}
+
+.hm-footer {
+    height: 48px;
+    min-width: 200px;
+    background-color: white !important;
+    border-top: none !important;
+}
+
+#slimScrollDiv {
+  float:left !important;
+}
