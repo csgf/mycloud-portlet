@@ -34,3 +34,34 @@ The software pre-requisites for Clever installation are:
 - Dbus daemon. This software implements IPC functionalities and it is already installed and running on almost any linux distribution installation.
 - dbus-launch command. For red-hat like distributions the package is named “dbus-x11”
 
+Ejabberd installation and configuration
+---------------------------------------
+
+In a CentOs (or similar) distribution the Ejabberd server can be installed with the command: “yum install ejabberd”. The configuration is quite simple. Using your favourite editor open the ejabberd configuration file (usually located in /etc/ejabberd/ejabberd.cfg) and proceed as follows: 
+
+1. Set the vhost
+
+.. code:: bash
+  
+   “{hosts, ["<your hostname>"]}.”
+  
+  Note that the '.' character at the end of line is mandatory.
+
+2. Disable the registration timeout control. This is to disable the time interval control of two successive inband registrations.
+
+.. code:: bash
+  
+   “{registration_timeout, infinity}.”
+  
+3. Enable the user registration from all users by adding 
+
+.. code:: bash
+  
+   “{access, register, [{allow, all}]}.”
+
+4.	Enable the user registration from right network by setting in mod_register section (this example allows inband registration from all clients):
+
+.. code:: bash
+  
+  {ip_access, [{allow, "0.0.0.0/0"}]} 
+
